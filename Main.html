@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profile Site</title>
+		<link rel="stylesheet" href="design.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+
+<body>
+  <center>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="Profilesite('About')">About Me</button>
+        <button class="w3-bar-item w3-button" onclick="Profilesite('Education')">Education</button>
+        <button class="w3-bar-item w3-button" onclick="Profilesite('Contact')">Contact</button>
+    </div>
+
+    <div>
+        <img class="avatarImage" src="myself.jpg" />
+        <br>
+        <span class="introduction">Introducting</span>
+        <h1><em>Teñoso, John Michael S.</em></h1>
+        <h2><span>F</span>rom:<strong></strong> BSCS32-E1 <em><span></span></em></h2>
+    </div>
+
+<div class="w3-bar w3-black">
+    <div id="About" class="w3-container intro">
+      <h1><em>About Me</em></h1>
+      <span class="introduction">My course is Computer Science and Seeking learning a new types of codes</span>
+    </div>
+
+    <div id="Education" class="w3-container intro" style="display:none">
+      <h1><em>Education</em></h1>
+      <span class="introduction">Studying on Lyceum of Alabang</span> 
+    </div>
+
+    <div id="Contact" class="w3-container intro" style="display:none">
+        <h1><em>Contact</em></h1>
+        <span class="introduction">Mobile No. 09XXXXXXXXX /</span>
+        <span class="introduction">Fb link: facebook.com/jingetsu</span> 
+    </div>
+  </div>
+  </center>
+
+<script>
+  function Profilesite(myweb) 
+  {
+  var i;
+  var x = document.getElementsByClassName("intro");
+    for (i = 0; i < x.length; i++) 
+    {
+      x[i].style.display = "none";  
+    }
+  document.getElementById(myweb).style.display = "block";  
+  }
+</script>
+</body>
+</html>
